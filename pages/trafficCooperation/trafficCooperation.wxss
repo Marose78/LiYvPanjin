@@ -1,0 +1,64 @@
+/* pages/police_assist/police_assist.wxss */
+.container {
+  padding: 20rpx 30rpx;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.activity-item {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.activity-info1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.activity-info2{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.activity-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.activity-location,
+.activity-time,
+.activity-points {
+  color: #666;
+  font-size: 14px;
+}
+
+.signup-button {
+  margin-top: 10px;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.no-activities {
+  text-align: center;
+  color: #999;
+  margin-top: 50px;
+}

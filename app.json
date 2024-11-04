@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/activities/activities",
+    "pages/market/market",
+    "pages/userCenter/userCenter",
+    "pages/searchActivity/searchActivity",
+    "pages/newsDetail/newsDetail",
+    "pages/userIdentity/userIdentity",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/userActivity/userActivity",
+    "pages/userTeam/userTeam",
+    "pages/userFamily/userFamily",
+    "pages/teamSettled/teamSettled",
+    "pages/searchTeam/searchTeam",
+    "pages/pointsRules/pointsRules",
+    "pages/pointsRecord/pointsRecord",
+    "pages/userOrder/userOrder",
+    "pages/behaviorUpload/behaviorUpload",
+    "pages/trafficCooperation/trafficCooperation",
+    "pages/trends/trends"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "小程序标题",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#ff8c00",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/icons/首页.png",
+        "selectedIconPath": "images/icons/首页-选中.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/activities/activities",
+        "iconPath": "images/icons/文明实践.png",
+        "selectedIconPath": "images/icons/文明实践-选中.png",
+        "text": "文明实践"
+      },
+      {
+        "pagePath": "pages/market/market",
+        "iconPath": "images/icons/积分超市.png",
+        "selectedIconPath": "images/icons/积分超市-选中.png",
+        "text": "积分超市"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "iconPath": "images/icons/用户中心.png",
+        "selectedIconPath": "images/icons/用户中心-选中.png",
+        "text": "用户中心"
+      }
+    ]
+  }
+}

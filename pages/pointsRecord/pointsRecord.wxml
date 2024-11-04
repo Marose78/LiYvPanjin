@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="balance">
+    <text class="balance-text">积分余额: {{points}} 分</text>
+  </view>
+  <view class="record-list">
+    <block wx:for="{{records}}" wx:key="index">
+      <view class="record-item">
+        <text class="record-time">{{item.time}}</text>
+        <text class="record-description">{{item.description}}</text>
+        <text class="record-points {{item.points >= 0 ? 'gain' : 'use'}}">{{item.points}} 分</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="no-records" wx:if="{{records.length === 0}}">
+    <text>暂无记录</text>
+  </view>
+</view>

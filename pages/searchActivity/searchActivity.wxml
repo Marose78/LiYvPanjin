@@ -1,0 +1,26 @@
+<!--pages/searchActivityPage/searchActivityPage.wxml-->
+
+<view class="search-container" bindtap="onSearchClick">
+  <image src="/images/icons/搜索框图标.png" mode="aspectFit"></image>
+  <input class="search-input" placeholder="输入关键字" bindinput="onInput" />
+</view>
+<view class="filter-container">
+  <view class="condition1">发布日期<image src="/images/icons/排序.png"></image>
+  </view>
+  <view class="condition2">距离远近<image src="/images/icons/排序.png"></image>
+  </view>
+</view>
+
+<!-- 搜索结果展示列表 -->
+
+<view class="search-result">
+  <block wx:for="{{queryResult}}" wx:key="id">
+    <view class="activity-card" bindtap="goToDetail" data-id="{{item.id}}">
+      <text class="activity-name">{{item.name}}</text>
+      <view class="activity-info">
+        <text class="activity-time">活动时间：{{item.time}}</text>
+        <text class="activity-location">地点：{{item.location}}</text>
+      </view>
+    </view>
+  </block>
+</view>

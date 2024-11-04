@@ -1,0 +1,103 @@
+.search-container {
+  background-color: #F4F4F4;
+  width: 680rpx;
+  height: 80rpx;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding-left: 20rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+.search-container image {
+  height: 45rpx;
+  width: 45rpx;
+  margin: auto 0;
+}
+
+.search-container input {
+  background-color: #F4F4F4;
+  height: 100%;
+  /* width: 0%; */
+  padding-left: 10rpx;
+}
+
+.filter-container {
+  width: 680rpx;
+  margin: 0rpx auto;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.condition1 {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50rpx;
+
+}
+
+.condition2 {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.filter-container image {
+  height: 25rpx;
+  width: 25rpx;
+  margin: auto 10rpx;
+
+}
+.list {
+  width: 100%; /* 每个列表占满容器宽度 */
+  display: flex;
+  flex-direction: column; /* 纵向排列卡片 */
+  background-color: #F4F4F4;
+}
+.search-result{
+  padding-top: 20rpx;
+  height: 100vh;
+  background-color: #F4F4F4;
+
+}
+.card {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex; 
+  /* align-items: center;  */
+  padding: 20rpx; 
+  position: relative;
+}
+
+.team-info{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-image{
+  width: 150rpx; /* 图片宽度 */
+  height: 150rpx; /* 图片高度 */
+  object-fit:cover;
+  /* margin-right: 10rpx; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.team-name{
+  font-size: 18px; /* 名称字体大小 */
+  margin-top: 10rpx;
+  color: #ff8c00;
+}
+.team-introduction{
+  margin-top: 20rpx;
+  font-size: 13px;
+}

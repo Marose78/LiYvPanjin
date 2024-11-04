@@ -1,0 +1,31 @@
+<view class="page-container">
+  <view class="category">正在进行中</view>
+  <view class="ongoing-container">
+    <view class="activity-list">
+      <block wx:for="{{ongoingActivities}}" wx:key="id">
+        <view class="activity-card" bindtap="goToDetail" data-id="{{item.id}}">
+          <text class="activity-name">{{item.name}}</text>
+          <view class="activity-info">
+            <text class="activity-time">活动时间：{{item.time}}</text>
+            <text class="activity-location">地点：{{item.location}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="category">已完成</view>
+  <view class="done-container">
+    <view class="activity-list">
+      <block wx:for="{{doneActivities}}" wx:key="id">
+        <view class="doneActivity-card" bindtap="goToDetail" data-id="{{item.id}}">
+          <text class="activity-name">{{item.name}}</text>
+          <view class="activity-info">
+            <text class="activity-time">活动时间：{{item.time}}</text>
+            <text class="activity-location">地点：{{item.location}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

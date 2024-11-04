@@ -1,0 +1,92 @@
+.search-container {
+  background-color: #F4F4F4;
+  width: 680rpx;
+  height: 80rpx;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding-left: 20rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+
+}
+
+.search-container image {
+  height: 45rpx;
+  width: 45rpx;
+  margin: auto 0;
+}
+
+.search-container input {
+  background-color: #F4F4F4;
+  height: 100%;
+  /* width: 0%; */
+  padding-left: 10rpx;
+}
+
+.filter-container {
+  width: 700rpx;
+  margin: 30rpx auto;
+  padding-left: 10rpx;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.condition1 {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50rpx;
+}
+
+.condition2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-container image {
+  height: 25rpx;
+  width: 25rpx;
+  margin: auto 10rpx;
+}
+
+
+.list {
+  width: 100%; /* 每个列表占满容器宽度 */
+  display: flex;
+  flex-direction: column; /* 纵向排列卡片 */
+  background-color: #F4F4F4;
+}
+.search-result {
+  padding: 20rpx;
+  background-color: #F4F4F4;
+  height: 100vh;
+}
+
+.activity-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-name {
+  font-size: 16px;
+  font-weight: bold;
+ 
+   
+}
+.activity-info{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-time,
+.activity-location {
+  font-size: 13px;
+  color: #666;
+}

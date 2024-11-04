@@ -1,0 +1,49 @@
+/* pages/userActivity/userActivity.wxss */
+.page-container{
+  height: 100vh;
+  background-color: #ff8c00;
+  padding-top: 20rpx;
+}
+
+.activity-list {
+  padding: 20rpx;
+}
+
+.activity-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.doneActivity-card {
+  background-color: #c6efc6;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-name {
+  font-size: 16px;
+  font-weight: bold;
+  /* color: #fff; */
+ 
+   
+}
+.activity-info{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  /* color: #fff; */
+}
+
+.activity-time,
+.activity-location {
+  font-size: 13px;
+}
+.category{
+  font-weight: bold;
+  padding-left: 30rpx;
+  color: #fff;
+}

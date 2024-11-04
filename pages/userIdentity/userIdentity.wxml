@@ -1,0 +1,14 @@
+<!--pages/identity/identity.wxml-->
+<view class="page-container">
+  <view class="form-group">
+    <text class="label">姓名:</text>
+    <input class="input" placeholder="请输入姓名" bindinput="onNameInput" />
+  </view>
+  
+  <view class="form-group">
+    <text class="label">身份证号:</text>
+    <input class="input" placeholder="请输入身份证号" bindinput="onIdInput" />
+  </view>
+  
+  <button class="submit-button" bindtap="onSubmit">认证</button>
+</view>

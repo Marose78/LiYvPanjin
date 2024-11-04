@@ -1,0 +1,17 @@
+
+<view class="page-container">
+
+<view class="form-group">
+  <text class="behaviorIntro-label">行为简介:</text>
+  <textarea class="input" placeholder="请输入简介" bindinput="onIntroInput" style="height:160rpx;" maxlength="200" value="{{inputValue}}"></textarea>
+</view>
+
+<view class="form-group">
+  <text class="behaviorImage-label">行为图片:</text>
+  <view class="behavior-image" bindtap="chooseImage" wx:if="{{!imageUrl}}">
+    <image src="/images/icons/添加队伍图片.png" mode="aspectFit" class="add-icon"></image>
+  </view>
+</view>
+
+<button class="submit-button" bindtap="onSubmit">上传</button>
+</view>

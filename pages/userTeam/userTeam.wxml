@@ -1,0 +1,12 @@
+<view class="page-container">
+  <view class="category">我的队伍</view>
+    <view class="team-list">
+      <view class="card" wx:for="{{teamList}}" wx:key="index">
+      <image src="{{item.image}}" class="team-image"></image>
+      <view class="team-info">
+        <view class="team-name">{{item.name}}</view>
+        <view class="team-introduction">{{item.introduction}}</view>
+      </view>
+    </view>
+    </view>
+</view>

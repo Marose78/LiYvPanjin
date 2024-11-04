@@ -1,0 +1,26 @@
+<view class="container">
+
+  <view class="rule-item">
+    <text class="rule-title">1. 积分获取</text>
+    <text class="rule-description">参加活动可获得积分，不同活动积分值不同，具体积分根据活动规则而定。(规则示例)</text>
+  </view>
+
+  <view class="rule-item">
+    <text class="rule-title">2. 积分兑换</text>
+    <text class="rule-description">兑换商品时将扣除相应的积分，具体积分需求请查看商品列表。</text>
+  </view>
+
+  <view class="rule-item">
+    <text class="rule-title">3. 家庭成员共享积分</text>
+    <text class="rule-description">家庭成员之间可以共享积分，具体共享规则请咨询客服。</text>
+  </view>
+
+  <view class="rule-item">
+    <text class="rule-title">4. 积分有效期</text>
+    <text class="rule-description">积分自获得之日起有效期为一年，过期未使用的积分将自动失效。</text>
+  </view>
+
+  <view class="footer">
+    <text>如有疑问，请联系客服。</text>
+  </view>
+</view>

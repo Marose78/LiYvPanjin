@@ -1,0 +1,21 @@
+<view class="container">
+
+  <view class="notification-list">
+    <block wx:for="{{notifications}}" wx:key="index">
+      <view class="notification-item">
+        <view class="info1">
+          <text class="notification-title">{{item.title}}</text>
+          <text class="notification-date">{{item.date}}</text>
+        </view>
+
+        <view class="info2">
+          <text class="notification-content">{{item.content}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="no-notifications" wx:if="{{notifications.length === 0}}">
+    <text>暂无通知</text>
+  </view>
+</view>

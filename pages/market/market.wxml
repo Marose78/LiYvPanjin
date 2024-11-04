@@ -1,0 +1,33 @@
+<!--pages/market/market.wxml-->
+<view class="search-container" bindtap="onSearchClick">
+  <image src="/images/icons/搜索框图标.png" mode="aspectFit"></image>
+  <input class="search-input" placeholder="搜索产品或服务" />
+</view>
+<view class="categories">
+  <view wx:for="{{categories}}" wx:key="index" data-index="{{index}}" bindtap="switchCategory" class="category-title {{currentCategory === index ? 'active' : ''}}">
+    {{item}}
+  </view>
+</view>
+
+<view class="list-container">
+  <view class="list" wx:if="{{currentCategory === 0}}">
+    <view class="card" wx:for="{{productsList}}" wx:key="index">
+      <image src="{{item.image}}" class="product-image"></image>
+      <view class="product-info">
+        <view class="product-name">{{item.name}}</view>
+        <view class="product-introduction">{{item.introduction}}</view>
+      </view>
+      <view class="product-price">{{item.price}} 积分</view>
+    </view>
+  </view>
+  <view class="list" wx:if="{{currentCategory === 1}}">
+    <view class="card" wx:for="{{servicesList}}" wx:key="index">
+      <image src="{{item.image}}" class="service-image"></image>
+      <view class="service-info">
+        <view class="service-name">{{item.name}}</view>
+        <view class="service-introduction">{{item.introduction}}</view>
+      </view>
+      <view class="service-price">{{item.price}} 积分</view>
+    </view>
+  </view>
+</view>

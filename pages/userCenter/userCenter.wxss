@@ -1,0 +1,163 @@
+/* pages/userCenter/userCenter.wxss */
+.page-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.user-profile {
+  height: 200rpx;
+  /* border-bottom: 3px solid #dedede; */
+  background: #ff8c00;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 50rpx;
+  
+}
+
+.user-profile .img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 25rpx;
+}
+
+.user-profile .text {
+  text-align: center;
+  font-size: 17px;
+  color:#fff;
+  font-weight: bold;
+  /* color: #333333; */
+}
+
+.score-area {
+  background-color: #ff8c00;
+  padding-bottom: 120rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10rpx;
+  color: #fff;
+}
+
+.variable {
+  text-align: center;
+  margin-bottom: 10rpx;
+  /* margin-top: 15rpx; */
+  color: #fff;
+}
+
+.bottom-container {
+  padding-top: 10rpx;
+  /* background-color: #ff8c00; */
+}
+
+.account-area {
+  width: 720rpx;
+  margin: 0rpx auto;
+  margin-top: -100rpx;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 20rpx;
+  padding-top: 80rpx;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 10rpx;
+}
+
+.account-area navigator {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}
+
+.account-area image {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  padding-top: 10px;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+}
+
+.account-area text {
+  display: block;
+  text-align: center;
+  font-size: 28rpx;
+  letter-spacing: 1px;
+}
+
+.order-area {
+  width: 720rpx;
+  margin: 20rpx auto;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 20rpx;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 80rpx;
+  padding-bottom: 10rpx;
+}
+
+.order-area navigator {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}
+
+.order-area image {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  padding-top: 10px;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+}
+
+.order-area text {
+  display: block;
+  text-align: center;
+  font-size: 28rpx;
+  letter-spacing: 1px;
+}
+.area-title{
+  font-weight: bold;
+  position: absolute;
+  top: 30rpx;
+  left: 40rpx;
+}
+
+.logout-button {
+  width: 700rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  /* 实现水平居中 */
+  height: 90rpx;
+  /* line-height: 90rpx; */
+  /* text-align: center; */
+  color: #fff;
+  background-color: #ff8c00;
+
+}

@@ -1,0 +1,18 @@
+<!--pages/searchActivityPage/searchActivityPage.wxml-->
+
+<view class="search-container" bindtap="onSearchClick">
+  <image src="/images/icons/搜索框图标.png" mode="aspectFit"></image>
+  <input class="search-input" placeholder="输入队伍名称" bindinput="onInput" />
+</view>
+
+
+<!-- 搜索结果展示列表 -->
+<view class="search-result">
+    <view class="card" wx:for="{{queryResult}}" wx:key="index">
+      <image src="{{item.image}}" class="team-image"></image>
+      <view class="team-info">
+        <view class="team-name">{{item.name}}</view>
+        <view class="team-introduction">{{item.introduction}}</view>
+      </view>
+    </view>
+</view>

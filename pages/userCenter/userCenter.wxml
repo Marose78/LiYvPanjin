@@ -1,0 +1,66 @@
+<!--pages/userCenter/userCenter.wxml-->
+<view class="page-container">
+  <view class='user-profile'>
+
+    <view class='img'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='text'>
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+  <view class="score-area">
+    <view class="card-container">
+      <text class="variable">{{liyuClass}}</text>
+      <text>礼遇等级</text>
+    </view>
+    <view class="card-container">
+      <text class="variable">{{youdaiScore}}</text>
+      <text>我的积分</text>
+    </view>
+  </view>
+  <view class="bottom-container">
+    <view class="account-area">
+      <view class="area-title">我的信息</view>
+      <navigator hover-class="none" url="/pages/userIdentity/userIdentity">
+        <image src='/images/userCenter/身份认证.png' mode="aspectFit"></image>
+        <text>身份认证</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/userActivity/userActivity">
+        <image src='/images/userCenter/我的活动.png' mode="aspectFit"></image>
+        <text>我的活动</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/userTeam/userTeam">
+        <image src='/images/userCenter/我的组织.png' mode="aspectFit"></image>
+        <text>我的队伍</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/userFamily/userFamily">
+        <image src='/images/userCenter/家庭成员.png' mode="aspectFit"></image>
+        <text>家庭成员</text>
+      </navigator>
+    </view>
+
+    <view class="order-area">
+    <view class="area-title">积分银行</view>
+      <navigator hover-class="none" url="/pages/userOrder/userOrder">
+        <image src='/images/userCenter/我的订单.png' mode="aspectFit"></image>
+        <text>我的订单</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/pointsRecord/pointsRecord">
+        <image src='/images/userCenter/积分记录.png' mode="aspectFit"></image>
+        <text>积分记录</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/">
+        <image src='/images/userCenter/积分兑换.png' mode="aspectFit"></image>
+        <text>积分兑换</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/pointsRules/pointsRules">
+        <image src='/images/userCenter/积分规则.png' mode="aspectFit"></image>
+        <text>积分规则</text>
+      </navigator>
+    </view>
+
+    <button class="logout-button" style="width:710rpx">退出登录</button>
+
+  </view>
+</view>

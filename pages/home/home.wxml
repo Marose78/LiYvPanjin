@@ -1,0 +1,62 @@
+<view class="page-container">
+  <scroll-view scroll-y bindscrolltolower="lower">
+    <view class="swiper-container">
+      <swiper class="swiper1" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="{{indicatorDots}}" circular="{{circular}}">
+        <swiper-item>
+          <image src="/images/pic1.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="/images/pic2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="/images/pic3.jpg"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="icon-container">
+      <navigator hover-class="none" url="/pages/searchActivity/searchActivity">
+        <image src='/images/icons/找活动.png' mode="aspectFit"></image>
+        <text>找活动</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/searchTeam/searchTeam">
+        <image src='/images/icons/找队伍.png' mode="aspectFit"></image>
+        <text>找队伍</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/teamSettled/teamSettled">
+        <image src='/images/icons/组织入驻.png' mode="aspectFit"></image>
+        <text>组织入驻</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/trends/trends">
+        <image src='/images/icons/活动动态.png' mode="aspectFit"></image>
+        <text>活动动态</text>
+      </navigator>
+    </view>
+    <view class="swiper2-container">
+      <swiper class="swiper2" autoplay="{{autoplay2}}" indicator-dots="{{indicatorDots2}}" circular="{{circular}}">
+        <swiper-item>
+          <image src="/images/宣传标语.png" mode="scaleToFill"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="/images/文明盘锦.png"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <view class="newsTitle">实时热点</view>
+    <view class="news-list">
+      <view class="column">
+        <view class="news-item" wx:for="{{leftColumn}}" wx:key="id" data-id="{{item.id}}" bindtap="goToNewsDetail">
+          <image class="news-image" src="{{item.image}}"></image>
+          <text class="news-title">{{item.title}}</text>
+        </view>
+      </view>
+      <view class="column">
+        <view class="news-item" wx:for="{{rightColumn}}" wx:key="id" data-id="{{item.id}}">
+          <image class="news-image" src="{{item.image}}"></image>
+          <text class="news-title">{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+
+  </scroll-view>
+</view>

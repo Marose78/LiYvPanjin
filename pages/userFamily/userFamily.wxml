@@ -1,0 +1,18 @@
+<!--pages/userFamily/userFamily.wxml-->
+<view class="title">我的家庭</view>
+<view class="family-container">
+  <view class="family-list">
+    <block wx:for="{{familyList}}" wx:key="id">
+      <view class="family-card" bindtap="goToDetail" data-id="{{item.id}}">
+        <text class="family-name">{{item.name}}</text>
+        <view class="noteName">备注：{{item.noteName}}</view>
+      <view class="family-score">积分：{{item.score}}</view>
+      </view>
+      
+    </block>
+  </view>
+</view>
+<view class="button-container">
+    <image src="/images/icons/添加家庭成员.png" class="button-icon"></image>
+    <text class="button-text">添加家庭成员</text>
+</view>

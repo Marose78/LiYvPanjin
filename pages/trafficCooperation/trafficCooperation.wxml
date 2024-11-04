@@ -1,0 +1,25 @@
+<view class="container">
+
+
+  <view class="activity-list">
+    <block wx:for="{{activities}}" wx:key="index">
+      <view class="activity-item">
+      <view class="activity-info1">
+        <text class="activity-name">{{item.name}}</text>
+        <text class="activity-points">积分: {{item.points}} 分</text>
+      </view>
+      <view class="activity-info2">
+        <text class="activity-location">地点: {{item.location}}</text>
+        <text class="activity-time">时间: {{item.time}}</text>
+      </view>
+        
+        
+        <button bindtap="signup" data-name="{{item.name}}" data-index="{{index}}" class="signup-button">报名参加</button>
+      </view>
+    </block>
+  </view>
+
+  <view class="no-activities" wx:if="{{activities.length === 0}}">
+    <text>暂无活动</text>
+  </view>
+</view>

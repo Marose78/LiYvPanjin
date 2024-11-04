@@ -1,0 +1,53 @@
+
+.page-container{
+  height: 100vh;
+  background-color: #ff8c00;
+  padding-top: 20rpx;
+}
+
+.team-list {
+  padding: 20rpx;
+}
+
+.card {
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  display: flex; 
+  /* align-items: center;  */
+  padding: 20rpx; 
+  position: relative;
+}
+
+.team-info{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-image{
+  width: 150rpx; /* 图片宽度 */
+  height: 150rpx; /* 图片高度 */
+  object-fit:cover;
+  /* margin-right: 10rpx; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.team-name{
+  font-size: 18px; /* 名称字体大小 */
+  margin-top: 10rpx;
+  font-weight: bold;
+  
+}
+.team-introduction{
+  margin-top: 20rpx;
+  font-size: 13px;
+}
+
+.category{
+  font-weight: bold;
+  padding-left: 30rpx;
+  color: #fff;
+}

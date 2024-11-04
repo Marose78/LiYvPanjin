@@ -1,0 +1,64 @@
+/* pages/userFamily/userFamily.wxss */
+.title {
+  font-weight: bold;
+  padding: 20rpx;
+  padding-bottom: 0;
+}
+
+.family-list {
+  padding: 20rpx;
+}
+
+.family-card {
+  height: 100rpx;
+  background-color: #ff8c00;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+
+.family-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.noteName{
+  color: #fff;
+  position: absolute;
+  left: 30rpx;
+  bottom: 20rpx;
+}
+
+.family-score{
+  color: #fff;
+  position: absolute;
+  left: 520rpx;
+  bottom: 20rpx;
+  
+}
+.button-container {
+  margin: 0 auto;
+  width: 710rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px; */
+  background-color: #007aff; /* 按钮背景颜色 */
+  border-radius: 5px;
+}
+
+.button-icon {
+  width: 45rpx;
+  height:45rpx;
+  margin-right: 15rpx; /* 图标和文本之间的间距 */
+}
+
+.button-text {
+  color: #fff; /* 文本颜色 */
+}
+
+

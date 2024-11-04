@@ -1,0 +1,43 @@
+<!--pages/activities/activities.wxml-->
+<scroll-view class="page-container" scroll-y style="height: 100vh;">
+
+  <view class="top-container">
+    <view class="search-container" bindtap="onSearchClick">
+      <image src="/images/icons/搜索框图标.png" mode="aspectFit"></image>
+      <input class="search-input" placeholder="搜索活动" />
+    </view>
+    <view class="icon-container">
+      <navigator hover-class="none" url="/pages/list/index?title=生日&id=5b8e37e34b640a63b33272dc">
+        <image src='/images/icons/问卷填写.png' mode="aspectFit"></image>
+        <text>问卷填写</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/trafficCooperation/trafficCooperation">
+        <image src='/images/icons/交警协勤.png' mode="aspectFit"></image>
+        <text>交警协勤</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/behaviorUpload/behaviorUpload">
+        <image src='/images/icons/文明行为上传.png' mode="aspectFit"></image>
+        <text>文明行为上传</text>
+      </navigator>
+      <navigator hover-class="none" url="/pages/list/index?title=party&id=5b8f4612afb7c17788e11998">
+        <image src='/images/icons/其他.png' mode="aspectFit"></image>
+        <text>其他</text>
+      </navigator>
+    </view>
+  </view>
+
+
+
+  <view class="activity-list">
+    <block wx:for="{{activities}}" wx:key="id">
+      <view class="activity-card" bindtap="goToDetail" data-id="{{item.id}}">
+        <text class="activity-name">{{item.name}}</text>
+        <view class="activity-info">
+          <text class="activity-time">活动时间：{{item.time}}</text>
+          <text class="activity-location">地点：{{item.location}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</scroll-view>
